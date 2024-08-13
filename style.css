@@ -223,5 +223,87 @@ nav{
     margin: -30px 20px 10px 0px;
 }
 
+html{
+  scroll-behavior: smooth;
+}
 
 
+
+/* For devices with a max width of 1200px */
+@media (max-width: 1200px) {
+  .grid-container {
+      grid-template-columns: repeat(2, 1fr);
+      margin: 10px 100px 10px 100px;
+  }
+  .button, .button2 {
+      margin-left: 50%;
+      transform: translateX(-50%);
+  }
+  .details2 {
+      margin-left: 50%;
+      transform: translateX(-50%);
+  }
+}
+
+/* For devices with a max width of 768px (tablets) */
+@media (max-width: 768px) {
+  nav {
+      padding: 20px;
+  }
+  .listitems {
+      margin: 0px 50px;
+  }
+  .grid-container {
+      grid-template-columns: 1fr;
+      margin: 10px 50px 10px 50px;
+  }
+  .button, .button2 {
+      margin-left: 50%;
+      transform: translateX(-50%);
+  }
+  .details2 {
+      margin-left: 50%;
+      transform: translateX(-50%);
+  }
+  .heading3, .heading4 {
+      font-size: 40px;
+  }
+}
+
+/* For devices with a max width of 480px (mobile phones) */
+@media (max-width: 480px) {
+  nav {
+      padding: 10px;
+  }
+  .listitems {
+      margin: 0px 20px;
+  }
+  .grid-container {
+      grid-template-columns: 1fr;
+      margin: 10px 20px 10px 20px;
+  }
+  .button, .button2 {
+      margin-left: 50%;
+      transform: translateX(-50%);
+  }
+  .details, .details2 {
+      margin: 10px 20px;
+      font-size: medium;
+  }
+  .heading3, .heading4 {
+      font-size: 30px;
+  }
+  .iconcollection {
+      flex-direction: column;
+  }
+  .image1, .image2, .image3 {
+      width: 100%;
+      height: auto;
+  }
+  .sectionhead {
+      padding: 20px;
+  }
+  .mainhead, .subhead {
+      font-size: 30px;
+  }
+}
